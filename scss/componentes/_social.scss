@@ -1,0 +1,8 @@
+.social_tit {
+    padding: map-get($tit-soc , pd );
+    background-color: map-get($tit-soc,bg);
+    font-family: map-get($tit-soc,fnt-fly);
+    font-weight: map-get($tit-soc,fnt-w); 
+    text-align: map-get($tit-soc, tx-algn);
+}
+
