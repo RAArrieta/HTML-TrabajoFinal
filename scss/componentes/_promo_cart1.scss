@@ -1,7 +1,7 @@
-.cartel {
-    grid-area: cartel;
+.cartel5 {
+    grid-area: cartel5;
 }
-.cartel_fondo {
+.cartel_fondo5 {
     @extend %home_cartel;
     @media (min-width: 720px) and (max-width: 960px) {
         height: $crt-px*0.75;
@@ -12,7 +12,7 @@
         width: $crt-px*0.6;
     }
 }
-.cartel_text1 {
+.cartel_text5 {
     @extend %alig;
     font-size: $sz-ppl;
     -webkit-text-stroke: $br-txt $clr-br;
@@ -31,7 +31,7 @@
     }
     transition: all 0.3s ease-out;
 }
-.cartel_text2 {
+.cartel_text6 {
     @extend %alig;
     visibility: hidden;
     font-family: $fnt-bnr;
@@ -53,24 +53,24 @@
     }
     transition: all 1 ease-in;
 }
-.cartel_pizza {
+.cartel_pizz {
     grid-area: img;
     object-fit: cover;
     width:100%;
     height:100%;
 }
-.union {
+.union5 {
     display: grid;
     grid-template-columns: $crt-px 70%;
     grid-template-rows: $crt-px;
     grid-template-areas: 
-    "cartel img";
+    "cartel5 img";
     justify-content: center;
     &:hover {
-        .cartel_text1 {
+        .cartel_text5 {
             transform: rotate(180deg) scale(0);
         }
-        .cartel_text2 {
+        .cartel_text6 {
             visibility: visible;
             transform: scale(2);
         }

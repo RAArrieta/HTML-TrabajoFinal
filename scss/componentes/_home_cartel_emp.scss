@@ -49,14 +49,14 @@
     @media (min-width: 720px) and (max-width: 960px) {
         height: $crt-px*0.75;
         width: $crt-px*0.75;
-        font-size: $sz-ppl*0.06;
-        -webkit-text-stroke: $br-txt*0.06 $clr-br;
+        font-size: $sz-ppl*0.3;
+        -webkit-text-stroke: $br-txt*0.3 $clr-br;
     }
     @media (max-width: 720px) {
         height: $crt-px*0.6;
         width: $crt-px*0.6;
-        font-size: $sz-ppl*0.04;
-        -webkit-text-stroke: $br-txt*0.04 $clr-br;
+        font-size: $sz-ppl*0.2;
+        -webkit-text-stroke: $br-txt*0.2 $clr-br;
     }
     transition: all 1 ease-in;
 }
