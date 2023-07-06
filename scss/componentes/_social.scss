@@ -4,5 +4,9 @@
     font-family: map-get($tit-soc,fnt-fly);
     font-weight: map-get($tit-soc,fnt-w); 
     text-align: map-get($tit-soc, tx-algn);
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 

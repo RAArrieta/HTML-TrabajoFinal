@@ -1,6 +1,50 @@
+
+.f-p1 {
+    grid-area: f-p1;
+}
+.f-p2 {
+    grid-area: f-p2;
+}
+.f-p3 {
+    grid-area: f-p3;
+}
+.f-p4 {
+    grid-area: f-p4;
+}
+.f-p5 {
+    grid-area: f-p5;
+}
+.f-p6 {
+    grid-area: f-p6;
+}
+.f-i1 {
+    grid-area: f-i1;
+}
+.f-i2 {
+    grid-area: f-i2;
+}
+.f-i3 {
+    grid-area: f-i3;
+}
+.f-b {
+    grid-area: vacio;
+}
 footer {
-    background-color: white;
+    background-color: $clr-2;
     font-family: $fnt-txt;
-    font-weight: bold; 
-    font-size: 120%;
+    font-size: $sz-ppl*0.3;
+    /*font-weight: bold;*/
+    display: grid;
+    grid-template-columns: 60% 7% 20%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "f-p1 f-i1 f-p4"
+    "f-p2 f-i2 f-p5"
+    "f-p3 f-i3 f-p6";
+    justify-content: center;
+    justify-items: stretch;
+    align-items: center;
+    @media (max-width: 960px) {
+        font-size: $sz-ppl*0.2;        
+    }
 }

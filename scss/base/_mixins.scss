@@ -1,0 +1,8 @@
+@mixin titulos ($ff, $fs, $color, $pd, $wts, $fw){
+    font-family: $ff;
+	font-size: $fs;
+	color: $color;
+	padding-top: $pd;
+    -webkit-text-stroke: $wts;
+    font-weight: $fw;
+}

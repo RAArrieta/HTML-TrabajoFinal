@@ -1,16 +1,19 @@
 %alig {
+    position: absolute;
+    height: $crt-px;
+    width: $crt-px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: $fnt-bnr;
-    font-size: $sz-ppl;
-    color: white;
-    -webkit-text-stroke: 4px black;
+    color: $clr-txt;
 }
 
 %home_cartel {
-    
+    height: $crt-px;
+    width: $crt-px;
+    position: absolute;
     background: rgb(255,73,41);
     background: -moz-linear-gradient(148deg, rgba(255,73,41,1) 1%, rgba(244,232,36,1) 20%, rgba(245,242,185,1) 50%, rgba(244,232,36,1) 80%, rgba(255,73,41,1) 100%);
     background: -webkit-linear-gradient(148deg, rgba(255,73,41,1) 1%, rgba(244,232,36,1) 20%, rgba(245,242,185,1) 50%, rgba(244,232,36,1) 80%, rgba(255,73,41,1) 100%);

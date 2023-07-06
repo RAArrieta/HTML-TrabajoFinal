@@ -1,0 +1,20 @@
+.cart_tit {
+    @include titulos ($fnt-bnr, 70px, $clr-sec, 15px, 2px black, bold);
+    transition: all 1s;
+}
+.cart_img {
+    border-radius: 5% ;
+}
+.cart_caract {
+    background-color: $clr-fondo;
+    font-family: $fnt-txt;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    &:hover {
+        .cart_tit{
+            transform: scale(1.2);
+        }   
+    }
+}
+
