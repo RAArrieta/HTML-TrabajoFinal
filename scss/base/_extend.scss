@@ -1,4 +1,4 @@
-%alig {
+%cart_text1 {
     position: absolute;
     height: $crt-px;
     width: $crt-px;
@@ -8,8 +8,51 @@
     justify-content: center;
     font-family: $fnt-bnr;
     color: $clr-txt;
+    font-size: $sz-ppl*0.75;
+    -webkit-text-stroke: $br-txt*0.75 $clr-br;
+    line-height: 120%;
+    @media (min-width: 720px) and (max-width: 960px) {
+        height: $crt-px*0.75;
+        width: $crt-px*0.75;
+        font-size: $sz-ppl*0.6;
+        -webkit-text-stroke: $br-txt*0.6 $clr-br;
+    }
+    @media (max-width: 720px) {
+        height: $crt-px*0.6;
+        width: $crt-px*0.6;
+        font-size: $sz-ppl*0.45;
+        -webkit-text-stroke: $br-txt*0.45 $clr-br;
+    }
 }
-
+%cart_text2 {
+    position: absolute;
+    height: $crt-px;
+    width: $crt-px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $fnt-bnr;
+    color: $clr-txt;
+    visibility: hidden;
+    font-family: $fnt-bnr;
+    font-size: $sz-ppl*0.4;
+    color: $clr-txt;
+    -webkit-text-stroke: $br-txt*0.4 $clr-br;
+    line-height: 100%;
+    @media (min-width: 720px) and (max-width: 960px) {
+        height: $crt-px*0.75;
+        width: $crt-px*0.75;
+        font-size: $sz-ppl*0.3;
+        -webkit-text-stroke: $br-txt*0.3 $clr-br;
+    }
+    @media (max-width: 720px) {
+        height: $crt-px*0.6;
+        width: $crt-px*0.6;
+        font-size: $sz-ppl*0.2;
+        -webkit-text-stroke: $br-txt*0.2 $clr-br;
+    }
+}
 %home_cartel {
     height: $crt-px;
     width: $crt-px;
@@ -19,4 +62,25 @@
     background: -webkit-linear-gradient(148deg, rgba(255,73,41,1) 1%, rgba(244,232,36,1) 20%, rgba(245,242,185,1) 50%, rgba(244,232,36,1) 80%, rgba(255,73,41,1) 100%);
     background: linear-gradient(148deg, rgba(255,73,41,1) 1%, rgba(244,232,36,1) 20%, rgba(245,242,185,1) 50%, rgba(244,232,36,1) 80%, rgba(255,73,41,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4929",endColorstr="#ff4929",GradientType=1);
+    @media (min-width: 720px) and (max-width: 960px) {
+        height: $crt-px*0.75;
+        width: $crt-px*0.75;
+    }
+    @media (max-width: 720px) {
+        height: $crt-px*0.6;
+        width: $crt-px*0.6;
+    }
+}
+%cart_cont {
+    background-color: $clr-fondo;
+    display: flex;
+    align-items: center;
+    font-family: $fnt-txt;
+    font-size: $sz-ppl*0.2;
+    @media (min-width: 720px) and (max-width: 960px){
+        font-size: $sz-ppl*0.15;
+    }
+    @media (max-width: 720px){
+        font-size: $sz-ppl*0.12;
+    }
 }

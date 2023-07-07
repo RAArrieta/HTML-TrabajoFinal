@@ -1,56 +1,15 @@
-.cartel {
-    grid-area: cartel;
+.cart_fnd_txt1 {
+    grid-area: cart1;
 }
-.cartel_fondo {
+.cart_fnd1 {
     @extend %home_cartel;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-    }
 }
-.cartel_text1 {
-    @extend %alig;
-    font-size: $sz-ppl;
-    -webkit-text-stroke: $br-txt $clr-br;
-    line-height: 120%;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-        font-size: $sz-ppl*0.8;
-        -webkit-text-stroke: $br-txt*0.8 $clr-br;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-        font-size: $sz-ppl*0.6;
-        -webkit-text-stroke: $br-txt*0.6 $clr-br;
-    }
+.cart_txt11 {
+    @extend %cart_text1;
     transition: all 0.3s ease-out;
 }
-.cartel_text2 {
-    @extend %alig;
-    visibility: hidden;
-    font-family: $fnt-bnr;
-    font-size: $sz-ppl*0.5;
-    color: $clr-txt;
-    -webkit-text-stroke: $br-txt*0.5 $clr-br;
-    line-height: 100%;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-        font-size: $sz-ppl*0.3;
-        -webkit-text-stroke: $br-txt*0.3 $clr-br;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-        font-size: $sz-ppl*0.2;
-        -webkit-text-stroke: $br-txt*0.2 $clr-br;
-    }
+.cart_txt12 {
+    @extend %cart_text2;
     transition: all 1 ease-in;
 }
 .cartel_pizza {
@@ -59,18 +18,20 @@
     width:100%;
     height:100%;
 }
-.union {
+.cart_con_banner1 {
+    padding-top: $sz-ppl/4;
+    padding-bottom: $sz-ppl/4;
     display: grid;
     grid-template-columns: $crt-px 70%;
     grid-template-rows: $crt-px;
     grid-template-areas: 
-    "cartel img";
+    "cart1 img";
     justify-content: center;
     &:hover {
-        .cartel_text1 {
+        .cart_txt11 {
             transform: rotate(180deg) scale(0);
         }
-        .cartel_text2 {
+        .cart_txt12 {
             visibility: visible;
             transform: scale(2);
         }

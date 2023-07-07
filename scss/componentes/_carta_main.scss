@@ -1,6 +1,6 @@
 .cart_tit {
     @include titulos ($fnt-bnr, 70px, $clr-sec, 15px, 2px black, bold);
-    transition: all 1s;
+    transition: all 0.3s;
 }
 .cart_img {
     border-radius: 5% ;
@@ -13,7 +13,7 @@
     align-items: center;
     &:hover {
         .cart_tit{
-            transform: scale(1.2);
+            transform: scale(1.2) rotate(-1deg) ;
         }   
     }
 }

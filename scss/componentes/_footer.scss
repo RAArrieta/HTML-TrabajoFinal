@@ -1,12 +1,5 @@
-
 .f-p1 {
     grid-area: f-p1;
-}
-.f-p2 {
-    grid-area: f-p2;
-}
-.f-p3 {
-    grid-area: f-p3;
 }
 .f-p4 {
     grid-area: f-p4;
@@ -26,25 +19,22 @@
 .f-i3 {
     grid-area: f-i3;
 }
-.f-b {
-    grid-area: vacio;
-}
 footer {
     background-color: $clr-2;
     font-family: $fnt-txt;
-    font-size: $sz-ppl*0.3;
-    /*font-weight: bold;*/
+    font-size: $sz-ppl*0.25;
     display: grid;
-    grid-template-columns: 60% 7% 20%;
+    grid-template-columns: 53% 4% 20%;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "f-p1 f-i1 f-p4"
-    "f-p2 f-i2 f-p5"
-    "f-p3 f-i3 f-p6";
+    "f-p1 f-i2 f-p5"
+    "f-p1 f-i3 f-p6";
     justify-content: center;
     justify-items: stretch;
     align-items: center;
     @media (max-width: 960px) {
+        grid-template-columns: 65% 4% 20%;
         font-size: $sz-ppl*0.2;        
     }
 }

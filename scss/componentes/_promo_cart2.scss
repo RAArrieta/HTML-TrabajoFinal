@@ -1,63 +1,16 @@
-/*.caract {
-    background-color: $clr-2;
-    font-family: $fnt-txt;
-    font-size: 200%;
-}*/
-
-.cartel6 {
-    grid-area: cartel6;
+.cart_fnd_txt4 {
+    grid-area: cart4;
     
 }
-.cartel_fondo6 {
+.cart_fnd4 {
     @extend %home_cartel;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-    }
 }
-.cartel_text7 {
-    @extend %alig;
-    font-size: $sz-ppl*0.8;
-    -webkit-text-stroke: $br-txt*0.7 $clr-br;
-    line-height: 120%;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-        font-size: $sz-ppl*0.6;
-        -webkit-text-stroke: $br-txt*0.6 $clr-br;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-        font-size: $sz-ppl*0.4;
-        -webkit-text-stroke: $br-txt*0.4 $clr-br;
-    }
+.cart_txt41 {
+    @extend %cart_text1;
     transition: all 0.3s ease-out;
 }
-.cartel_text8 {
-    @extend %alig;
-    visibility: hidden;
-    font-family: $fnt-bnr;
-    font-size: $sz-ppl*0.4;
-    color: $clr-txt;
-    -webkit-text-stroke: $br-txt*0.4 $clr-br;
-    line-height: 100%;
-    @media (min-width: 720px) and (max-width: 960px) {
-        height: $crt-px*0.75;
-        width: $crt-px*0.75;
-        font-size: $sz-ppl*0.3;
-        -webkit-text-stroke: $br-txt*0.3 $clr-br;
-    }
-    @media (max-width: 720px) {
-        height: $crt-px*0.6;
-        width: $crt-px*0.6;
-        font-size: $sz-ppl*0.2;
-        -webkit-text-stroke: $br-txt*0.2 $clr-br;
-    }
+.cart_txt42 {
+    @extend %cart_text2;
     transition: all 1 ease-in;
 }
 .cartel_empn {
@@ -66,18 +19,19 @@
     width:100%;
     height:100%;
 }
-.union6 {
+.cart_con_banner4 {
+    padding-top: 15px;
     display: grid;
     grid-template-columns: 70% $crt-px;
     grid-template-rows: $crt-px;
     grid-template-areas: 
-    "img cartel6";
+    "img cart4";
     justify-content: center;
     &:hover {
-        .cartel_text7 {
+        .cart_txt41 {
             transform: rotate(180deg) scale(0);
         }
-        .cartel_text8 {
+        .cart_txt42 {
             visibility: visible;
             transform: scale(2);
         }

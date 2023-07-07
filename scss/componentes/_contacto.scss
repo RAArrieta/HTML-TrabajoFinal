@@ -1,15 +1,61 @@
-.resalta{
-    transition: all 1s;
+.cont_cl {
+    padding: 15px;  
+    h1 {
+        
+        font-weight: bold;
+    }
+    background-color: #f0ddd8;
+    grid-area: cl;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
 }
-
+.cont_w {
+    @extend %cart_cont;
+    grid-area: w;
+}
+.cont_t {
+    @extend %cart_cont;
+    grid-area: t;
+}
+.cont_d {
+    @extend %cart_cont;
+    grid-area: d;
+}
+.cont_m {
+    @extend %cart_cont;
+    grid-area: m;
+}
+.cont_f {
+    @extend %cart_cont;
+    grid-area: f;
+}
+.cont_i {
+    @extend %cart_cont;
+    grid-area: i;
+}
+.cont_data {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "cl w"
+    "cl t"
+    "cl d"
+    "cl m"
+    "cl f"
+    "cl i";
+    justify-content: center;
+    column-gap: 15px;
+}
 .caja_resalta:hover {
     
-    transform: scale(1.2);
+    transform: scale(1.03);
 }
 .caja_resalta {
-    background-color: $clr-2;
-    font-family: $fnt-txt;
-    font-size: $sz-ppl;
+    transition: all 1s;
 }
 
 
