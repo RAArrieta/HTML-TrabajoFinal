@@ -19,8 +19,8 @@
     height:100%;
 }
 .cart_con_banner2 {
-    padding-top: $sz-ppl/4;
-    padding-bottom: $sz-ppl/4;
+    padding-top: $sz-ppl*0.25;
+    padding-bottom: $sz-ppl*0.25;
     display: grid;
     grid-template-columns: 70% $crt-px;
     grid-template-rows: $crt-px;

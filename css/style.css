@@ -175,6 +175,12 @@ header {
   margin-top: 20px;
 }
 
+.nav-mine {
+  font-family: "Sora", sans-serif;
+  font-weight: 900;
+  background-color: white;
+}
+
 .social_tit {
   padding: 5px;
   background-color: white;
