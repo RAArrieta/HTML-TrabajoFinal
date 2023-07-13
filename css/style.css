@@ -1,4 +1,4 @@
-.cart_txt51, .cart_txt41, .cart_txt31, .cart_txt1 {
+.cart_txt1 {
   position: absolute;
   height: 400px;
   width: 400px;
@@ -13,7 +13,7 @@
   line-height: 120%;
 }
 @media (min-width: 720px) and (max-width: 920px) {
-  .cart_txt51, .cart_txt41, .cart_txt31, .cart_txt1 {
+  .cart_txt1 {
     height: 300px;
     width: 300px;
     font-size: 60px;
@@ -21,7 +21,7 @@
   }
 }
 @media (min-width: 576px) and (max-width: 720px) {
-  .cart_txt51, .cart_txt41, .cart_txt31, .cart_txt1 {
+  .cart_txt1 {
     height: 240px;
     width: 240px;
     font-size: 50px;
@@ -29,7 +29,7 @@
   }
 }
 @media (max-width: 576px) {
-  .cart_txt51, .cart_txt41, .cart_txt31, .cart_txt1 {
+  .cart_txt1 {
     height: 140px;
     width: 140px;
     font-size: 30px;
@@ -37,7 +37,7 @@
   }
 }
 
-.cart_txt52, .cart_txt42, .cart_txt32, .cart_txt2 {
+.cart_txt2 {
   position: absolute;
   height: 400px;
   width: 400px;
@@ -45,17 +45,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Bangers", cursive;
-  color: white;
   visibility: hidden;
   font-family: "Bangers", cursive;
-  font-size: 40px;
   color: white;
+  font-size: 40px;
   -webkit-text-stroke: 1.6px black;
   line-height: 120%;
 }
 @media (min-width: 720px) and (max-width: 920px) {
-  .cart_txt52, .cart_txt42, .cart_txt32, .cart_txt2 {
+  .cart_txt2 {
     height: 300px;
     width: 300px;
     font-size: 30px;
@@ -63,7 +61,7 @@
   }
 }
 @media (min-width: 576px) and (max-width: 720px) {
-  .cart_txt52, .cart_txt42, .cart_txt32, .cart_txt2 {
+  .cart_txt2 {
     height: 240px;
     width: 240px;
     font-size: 20px;
@@ -71,7 +69,7 @@
   }
 }
 @media (max-width: 576px) {
-  .cart_txt52, .cart_txt42, .cart_txt32, .cart_txt2 {
+  .cart_txt2 {
     height: 140px;
     width: 140px;
     font-size: 12px;
@@ -79,7 +77,7 @@
   }
 }
 
-.cart_fnd5, .cart_fnd4, .cart_fnd3, .cart_fnd {
+.cart_fnd {
   height: 400px;
   width: 400px;
   position: absolute;
@@ -90,19 +88,19 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4929",endColorstr="#ff4929",GradientType=1);
 }
 @media (min-width: 720px) and (max-width: 920px) {
-  .cart_fnd5, .cart_fnd4, .cart_fnd3, .cart_fnd {
+  .cart_fnd {
     height: 300px;
     width: 300px;
   }
 }
 @media (min-width: 576px) and (max-width: 720px) {
-  .cart_fnd5, .cart_fnd4, .cart_fnd3, .cart_fnd {
+  .cart_fnd {
     height: 240px;
     width: 240px;
   }
 }
 @media (max-width: 576px) {
-  .cart_fnd5, .cart_fnd4, .cart_fnd3, .cart_fnd {
+  .cart_fnd {
     height: 140px;
     width: 140px;
   }
@@ -325,48 +323,14 @@ header {
   }
 }
 
-.mover:hover .cart_txt1 {
+.cart_anim:hover .cart_txt1 {
   transform: rotate(180deg) scale(0);
 }
-.mover:hover .cart_txt2 {
+.cart_anim:hover .cart_txt2 {
   visibility: visible;
   transform: scale(2);
 }
 
-/*
-.cartel_pizza {
-    grid-area: img;
-    object-fit: cover;
-    width:100%;
-    height:100%;
-}/*
-.cart_con_banner1 {
-    padding-top: $sz-ppl*0.25;
-    padding-bottom: $sz-ppl*0.25;
-    display: grid;
-    grid-template-columns: $crt-px 70%;
-    grid-template-rows: $crt-px;
-    grid-template-areas: 
-    "cart1 img";
-    justify-content: center;
-    &:hover {
-        .cart_txt1 {
-            transform: rotate(180deg) scale(0);
-        }
-        .cart_txt2 {
-            visibility: visible;
-            transform: scale(2);
-        }
-    }  
-    @media (min-width: 720px) and (max-width: 960px) {
-        grid-template-columns: $crt-px*0.75 70%;
-        grid-template-rows: $crt-px*0.75;
-    }
-    @media (max-width: 720px) {
-        grid-template-columns: $crt-px*0.6 70%;
-        grid-template-rows: $crt-px*0.6;
-    }
-}*/
 .cart_tit {
   font-family: "Bangers", cursive;
   font-size: 70px;
@@ -393,147 +357,6 @@ header {
 }
 .cart_caract:hover .cart_tit {
   transform: scale(1.2) rotate(-1deg);
-}
-
-.cart_fnd_txt3 {
-  grid-area: cart3;
-}
-
-.cart_txt31 {
-  transition: all 0.3s ease-out;
-}
-
-.cart_txt32 {
-  transition: all 1 ease-in;
-}
-
-.cartel_pizz {
-  grid-area: img;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.cart_con_banner3 {
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 400px 70%;
-  grid-template-rows: 400px;
-  grid-template-areas: "cart3 img";
-  justify-content: center;
-}
-.cart_con_banner3:hover .cart_txt31 {
-  transform: rotate(180deg) scale(0);
-}
-.cart_con_banner3:hover .cart_txt32 {
-  visibility: visible;
-  transform: scale(2);
-}
-@media (min-width: 720px) and (max-width: 960px) {
-  .cart_con_banner3 {
-    grid-template-columns: 300px 70%;
-    grid-template-rows: 300px;
-  }
-}
-@media (max-width: 720px) {
-  .cart_con_banner3 {
-    grid-template-columns: 240px 70%;
-    grid-template-rows: 240px;
-  }
-}
-
-.cart_fnd_txt4 {
-  grid-area: cart4;
-}
-
-.cart_txt41 {
-  transition: all 0.3s ease-out;
-}
-
-.cart_txt42 {
-  transition: all 1 ease-in;
-}
-
-.cartel_empn {
-  grid-area: img;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.cart_con_banner4 {
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 70% 400px;
-  grid-template-rows: 400px;
-  grid-template-areas: "img cart4";
-  justify-content: center;
-}
-.cart_con_banner4:hover .cart_txt41 {
-  transform: rotate(180deg) scale(0);
-}
-.cart_con_banner4:hover .cart_txt42 {
-  visibility: visible;
-  transform: scale(2);
-}
-@media (min-width: 720px) and (max-width: 960px) {
-  .cart_con_banner4 {
-    grid-template-columns: 70% 300px;
-    grid-template-rows: 300px;
-  }
-}
-@media (max-width: 720px) {
-  .cart_con_banner4 {
-    grid-template-columns: 70% 240px;
-    grid-template-rows: 240px;
-  }
-}
-
-.cart_fnd_txt5 {
-  grid-area: cart5;
-}
-
-.cart_txt51 {
-  transition: all 0.3s ease-out;
-}
-
-.cart_txt52 {
-  transition: all 1 ease-in;
-}
-
-.cartel_sdw {
-  grid-area: img;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.cart_con_banner5 {
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 400px 70%;
-  grid-template-rows: 400px;
-  grid-template-areas: "cart5 img";
-  justify-content: center;
-}
-.cart_con_banner5:hover .cart_txt51 {
-  transform: rotate(180deg) scale(0);
-}
-.cart_con_banner5:hover .cart_txt52 {
-  visibility: visible;
-  transform: scale(2);
-}
-@media (min-width: 720px) and (max-width: 960px) {
-  .cart_con_banner5 {
-    grid-template-columns: 300px 70%;
-    grid-template-rows: 300px;
-  }
-}
-@media (max-width: 720px) {
-  .cart_con_banner5 {
-    grid-template-columns: 240px 70%;
-    grid-template-rows: 240px;
-  }
 }
 
 .cont_cl {

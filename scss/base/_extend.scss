@@ -38,12 +38,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: $fnt-bnr;
-    color: $clr-txt;
     visibility: hidden;
     font-family: $fnt-bnr;
-    font-size: $sz-ppl*0.4;
     color: $clr-txt;
+    font-size: $sz-ppl*0.4;
     -webkit-text-stroke: $br-txt*0.4 $clr-br;
     line-height: 120%;
     @media (min-width: 720px) and (max-width: 920px) {
