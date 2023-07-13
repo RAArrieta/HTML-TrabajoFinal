@@ -37,4 +37,8 @@ footer {
         grid-template-columns: 65% 4% 20%;
         font-size: $sz-ppl*0.2;        
     }
+    @media (max-width: 576px){
+        grid-template-columns: 50% 4% 20%;
+        font-size: $sz-ppl*0.1;
+    }
 }

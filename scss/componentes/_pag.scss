@@ -5,6 +5,10 @@
     padding: 0;
     margin-bottom: 10px;
 }
+.centrar {
+    padding-left: 3px;
+    padding-right: 3px;
+}
 .fondo {
     background-image: url("../img/fondopag.png");
 }
@@ -14,4 +18,8 @@
     right: 5px;
     height: 100px;
     width: 100px;
+    @media (max-width:576px){
+        height: 80px;
+        width: 80px;
+    }
 }

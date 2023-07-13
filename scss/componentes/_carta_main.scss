@@ -11,6 +11,9 @@
     font-size: 30px;
     text-align: center;
     align-items: center;
+    ul {
+        padding: 0;
+    }
     &:hover {
         .cart_tit{
             transform: scale(1.2) rotate(-1deg) ;

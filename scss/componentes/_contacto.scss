@@ -1,8 +1,13 @@
 .cont_cl {
     padding: 15px;  
-    h1 {
-        
+    h2 {
         font-weight: bold;
+        @media (max-width: 575px){
+            font-size: $sz-ppl*0.2;
+        }
+    }
+    fieldset input{
+        width: 100%;
     }
     background-color: #f0ddd8;
     grid-area: cl;
@@ -49,13 +54,25 @@
     "cl i";
     justify-content: center;
     column-gap: 15px;
+    @media (max-width: 576px){
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        "w"
+        "t"
+        "d"
+        "m"
+        "f"
+        "i"
+        "cl";
+        justify-content: center;
+    }
 }
 .caja_resalta:hover {
     
     transform: scale(1.03);
 }
 .caja_resalta {
+    align-items: center;
     transition: all 1s;
 }
-
-
