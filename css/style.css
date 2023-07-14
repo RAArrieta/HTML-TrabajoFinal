@@ -48,32 +48,32 @@
   visibility: hidden;
   font-family: "Bangers", cursive;
   color: white;
-  font-size: 40px;
-  -webkit-text-stroke: 1.6px black;
+  font-size: 75px;
+  -webkit-text-stroke: 3px black;
   line-height: 120%;
 }
 @media (min-width: 720px) and (max-width: 920px) {
   .cart_txt2 {
     height: 300px;
     width: 300px;
-    font-size: 30px;
-    -webkit-text-stroke: 1.2px black;
+    font-size: 60px;
+    -webkit-text-stroke: 2.4px black;
   }
 }
 @media (min-width: 576px) and (max-width: 720px) {
   .cart_txt2 {
     height: 240px;
     width: 240px;
-    font-size: 20px;
-    -webkit-text-stroke: 0.8px black;
+    font-size: 50px;
+    -webkit-text-stroke: 1.8px black;
   }
 }
 @media (max-width: 576px) {
   .cart_txt2 {
     height: 140px;
     width: 140px;
-    font-size: 12px;
-    -webkit-text-stroke: 0.6px black;
+    font-size: 30px;
+    -webkit-text-stroke: 1.2px black;
   }
 }
 
@@ -392,11 +392,11 @@ header {
 }
 
 .cart_anim:hover .cart_txt1 {
-  transform: rotate(180deg) scale(0);
+  transform: rotate(160deg) scale(0);
 }
 .cart_anim:hover .cart_txt2 {
   visibility: visible;
-  transform: scale(2);
+  transform: scale(1);
 }
 
 .cart_tit {

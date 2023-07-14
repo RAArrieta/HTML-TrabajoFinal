@@ -23,10 +23,10 @@
 }
 .cart_anim:hover {
     .cart_txt1 {
-        transform: rotate(180deg) scale(0);
+        transform: rotate(160deg) scale(0);
     }
     .cart_txt2 {
             visibility: visible;
-            transform: scale(2);
+            transform: scale(1);
     } 
 }
