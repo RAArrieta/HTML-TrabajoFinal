@@ -4,15 +4,28 @@
 }
 .cart_img {
     border-radius: 5% ;
+    padding: 3px;
+    border: 2px solid white;
+    margin: 10px;
+    background-color: black;
 }
 .cart_caract {
     background-color: $clr-fondo;
+    border: 2px solid black;
     font-family: $fnt-txt;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     ul {
         padding: 0;
+        h2 {
+            padding-bottom: 10px;
+            border-bottom: 2px solid red;
+        }
     }
     &:hover {
         .cart_tit{

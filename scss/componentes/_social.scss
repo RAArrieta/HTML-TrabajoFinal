@@ -4,9 +4,20 @@
     font-family: map-get($tit-soc,fnt-fly);
     font-weight: map-get($tit-soc,fnt-w); 
     text-align: map-get($tit-soc, tx-algn);
-    transition: all 1s;
+    transition: all 0.08s;
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+.rrss_ani {
+    transition: all 0.8s;
+    padding: 4px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 10px;
+    &:hover {
+        transform: scale(1.05);
     }
 }
 

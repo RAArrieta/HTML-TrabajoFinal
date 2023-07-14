@@ -2,6 +2,7 @@
     background-color: $clr-2;
     font-family: $fnt-txt;
     border-radius: 5%;
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     h1 {
@@ -38,5 +39,9 @@
     }
 }
 .borde {
+    margin: 5px;
     border-radius: 5%; 
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
 }
